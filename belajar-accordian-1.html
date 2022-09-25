@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar Accordian 1</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <section>
+        <h2 class="title">FAQs</h2>
+        <div class="faq">
+            <div class="question">
+                <h3>What is Javascript?</h3>
+                <svg width="15" height="10" viewBox="0 0 42 25">
+                    <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round"/>
+                </svg>
+            </div>
+            <div class="answer">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe minima voluptas necessitatibus earum temporibus excepturi dicta molestiae provident, nostrum nihil sequi soluta explicabo cum? Labore similique minima quam placeat nisi.</p>
+            </div>
+        </div>
+        <div class="faq">
+            <div class="question">
+                <h3>What is HTML?</h3>
+                <svg width="15" height="10" viewBox="0 0 42 25">
+                    <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round"/>
+                </svg>
+            </div>
+            <div class="answer">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe minima voluptas necessitatibus earum temporibus excepturi dicta molestiae provident, nostrum nihil sequi soluta explicabo cum? Labore similique minima quam placeat nisi.</p>
+            </div>
+        </div>
+        <div class="faq">
+            <div class="question">
+                <h3>What is CSS?</h3>
+                <svg width="15" height="10" viewBox="0 0 42 25">
+                    <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round"/>
+                </svg>
+            </div>
+            <div class="answer">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe minima voluptas necessitatibus earum temporibus excepturi dicta molestiae provident, nostrum nihil sequi soluta explicabo cum? Labore similique minima quam placeat nisi.</p>
+            </div>
+        </div>
+    </section>
+    <script>
+        const faqs = document.querySelectorAll(".faq");
+
+        faqs.forEach((faq) => {
+            faq.addEventListener("click", () => {
+                faq.classList.toggle("active");
+            })
+        })
+    </script>
+</body>
+</html>
