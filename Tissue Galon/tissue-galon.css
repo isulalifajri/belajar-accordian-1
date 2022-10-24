@@ -1,0 +1,162 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: content-box;
+}
+body{
+    font-family: fantasy;
+    background:#b5b5b5; 
+}
+.fluid-container{
+   margin:20px;
+   box-shadow: 0px 0px 20px 0px rgb(0 0 0 / 13%);
+   background-color:white ;
+}
+.table-container{
+    padding: 20px 20px 2px;
+}
+.text-center{
+    margin:20px;
+}
+.caption {
+    caption-side: top;
+    margin-bottom: 10px;
+    font-size: 22px;
+    text-align:left;
+    font-weight: bold;
+    color:rgb(169 72 72);
+    font-family: "Arial";
+    margin: 0 20px;
+}
+
+.stripe{
+    font-family: "Arial";
+    font-size:17px;
+    margin: 0 40px;
+    font-weight:bold;
+}
+.stripe1{
+    display: flex;
+    gap:15px;
+}
+table {
+    margin: 20px 20px 50px;
+    font-family: "Arial";
+    font-size: 12px;
+    width: -webkit-fill-available;
+ 
+}
+.table {
+    border-collapse: collapse;
+    font-size: 13px;
+}
+.table th, 
+.table td {
+    border-bottom: 1px solid #cccccc;
+    border-left: 1px solid #cccccc;
+    padding: 9px 21px;
+}
+.table th, 
+.table td:last-child {
+    border-right: 1px solid #cccccc;
+}
+.table td:first-child {
+    border-top: 1px solid #cccccc;
+}
+ 
+/* Table Header */
+.table thead th {
+    background-color: #032741;
+    color: #FFFFFF;
+}
+ 
+/* Table Body */
+.table tbody td {
+    color: #353535;
+}
+.table tbody tr:nth-child(odd) td {
+    /* background-color: #f5fff9; */
+    background-color: aliceblue;
+}
+.table tbody tr:hover th,
+.table tbody tr:hover td {
+    background-color: #002741;
+    transition: all .2s;
+    color:white;
+}
+
+.khem {
+    padding:0 20px 20px;
+}
+.batuk-pak-haji{
+    padding:0 20px;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Open Sans',sans-serif;
+}
+.khem1 {
+    padding: 0 20px 0 60px;
+    color: #002741;
+    font-size: 17px;
+    font-family: 'Open Sans',sans-serif;
+}
+.khem-p1 {
+    width: 100%;
+    margin-right: auto;
+}
+.foot{
+    margin-top:50px;
+    width : 100%;
+    padding-bottom:80px;
+}
+.foot1{
+    font-family: 'Open Sans',sans-serif;
+    font-size:20px;
+    text-align:center;
+    font-weight:bold;
+}
+ 
+/*Tabel Responsive 1*/
+
+@media(max-width:573px){
+    .table th, 
+    .table td {
+        padding: 5px 5px;
+    }
+    table {
+        margin: 10px 5px 25px;
+    }
+    .fluid-container {
+        margin: 20px 5px;
+    }
+    .table-container {
+        padding: 20px 0;
+    }
+    .caption {
+        margin: 0 5px;
+        font-size: 14px;
+    }
+    
+    .stripe{
+        margin: 0 10px;
+        font-size: 12px;
+    }
+    .khem {
+       padding:0;
+    }
+    .batuk-pak-haji {
+        padding: 0 4px;
+    }
+    .khem1 {
+        padding: 0 5px 20px 40px;
+        font-size: 14px;
+    }
+    .foot1 {
+        font-size: 15px;
+    }
+}
+@media(min-width:950px){
+    .table{
+        font-size:18px;
+    }
+}
